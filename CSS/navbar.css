@@ -340,4 +340,131 @@ ul {
 .copyright {
   text-align: center;
 }
-/*# sourceMappingURL=home.css.map */
+
+@media only screen and (max-width: 990px) {
+  .responsive-iframe {
+    height: 25vh;
+  }
+  .dropdown {
+    float: left;
+    text-align: right;
+    width: 100%;
+    border: 1px solid black;
+    background: #3a7206;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .dropdown .dropbtn {
+    font-size: 20px;
+    outline: none;
+    padding: 5px 15px;
+    background-color: inherit;
+    margin: 0;
+    border: 0;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  .header .row {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .col-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+  .col-2 h1 {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .col-2 p {
+    font-size: 20px;
+  }
+  .col-2 img {
+    padding: 10px 0;
+  }
+  .btn {
+    margin: 10px 0;
+  }
+  .testimonial {
+    padding-top: 20px;
+  }
+  .testimonial img {
+    width: 70%;
+  }
+  .testimonial .col-4 {
+    margin: 30px;
+    width: 100%;
+  }
+  .row {
+    width: 100%;
+  }
+  .footer-col-1 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .dropdown {
+    display: none;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
