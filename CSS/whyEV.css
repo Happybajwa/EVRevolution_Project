@@ -307,6 +307,10 @@ body {
   border-radius: 80px;
 }
 
+.main-header img:hover {
+  cursor: pointer;
+}
+
 .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6 {
   border: 2px solid #3a7206;
   padding: 8px 8px;
@@ -380,6 +384,30 @@ body {
   font-size: 20px;
 }
 
+.why-ev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.why-ev h1 {
+  text-align: center;
+  color: #3a7206;
+  font-weight: 500;
+}
+
 @media only screen and (max-width: 990px) {
   .main-header h1 {
     font-size: 20px;
@@ -404,6 +432,9 @@ body {
   }
   .title h1 {
     font-size: 15px;
+  }
+  .why-ev h1 {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=whyEV.css.map */

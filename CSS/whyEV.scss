@@ -37,6 +37,10 @@ body
     padding: 20px 0;
     border-radius: 80px;
 }
+.main-header img:hover
+{
+    cursor: pointer; 
+}
 .grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6
 {
     border: 2px solid $primary-color;
@@ -92,6 +96,22 @@ body
     text-align: center;
     font-size: 20px;
 }
+.why-ev 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.why-ev h1 
+{
+    text-align: center;
+    color: $primary-color;
+    font-weight: 500;
+
+}
 @media only screen and (max-width: 990px) 
 {
     .main-header h1
@@ -127,5 +147,9 @@ body
         {
             font-size: 15px;
         }
+    }
+    .why-ev h1 
+    {
+        font-size: 20px;
     }
 }
