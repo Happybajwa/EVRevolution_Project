@@ -1,3 +1,6 @@
+window.onresize = checkScreenSize
+window.onload = checkScreenSize
+
 function loadMenu()
 {
     let xmlhttp = new XMLHttpRequest();
@@ -17,15 +20,14 @@ function hamburgerMenu()
 
 function checkScreenSize()
 {
-    var width = window.innerWidth|| document.documentElement.clientWidth || document.body.clientWidth;
-    if(width >= 990)
+    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if(width <= 990)
         {   
-        hamburgerMenu();
+            hamburgerMenu();
         }
         else
         {
-           loadMenu();
+            loadMenu();
         }
 }
-window.onresize = checkScreenSize
-window.onload = checkScreenSize
+
