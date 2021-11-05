@@ -4,18 +4,25 @@
     {
         height: 25vh;
     }
+    .video
+    {
+      width: 80%;
+    }
+    .video h1
+    {
+      font-size: 25px;
+      font-weight: 300;
+    }
     .dropdown {
         float: left;
         text-align: right;
         width: 100%;
         border: 1px solid black;
-        background: $primary-color;
+        background: $btn-color;
         position: sticky;
         top: 0;
-        z-index: 100;
-        
       }
-      
+    
       .dropdown .dropbtn {
         font-size: 20px;  
         outline: none;
@@ -26,7 +33,6 @@
       }
       .navbar a:hover, .dropdown:hover .dropbtn {
         background-color: white;
-       
       }
       
     .dropdown-content {
@@ -75,6 +81,10 @@
         justify-content: center;
         align-items: center;
     }
+    .container h1
+    {
+      font-weight: 300;
+    }
     .col-2
     {
         display: flex;
@@ -88,6 +98,7 @@
         font-size: 30px;
         line-height: 30px;
         text-align: center;
+        font-weight: 400;
     }
     .col-2 p 
     {
@@ -126,6 +137,23 @@
      justify-content: center;
      text-align: center;
   }
+  .footer-col-1 p 
+  {
+    text-align: center;
+  }
+  .footer-col-2
+  {
+     flex-basis: 100%;
+     justify-content: center;
+     text-align: center;
+   
+   
+  }
+  .footer-col-2 p
+  {
+    text-align: center;
+  }
+
 }
 @media only screen and (min-width: 990px)
 {
