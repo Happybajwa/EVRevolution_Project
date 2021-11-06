@@ -5,7 +5,7 @@ function loadMenu()
 {
     let xmlhttp = new XMLHttpRequest();
     let oe = document.getElementById("menu");
-    xmlhttp.open("GET", "shared-nav.html", false);
+    xmlhttp.open("GET", "/HTML/SharedMenu/shared-hamburger-nav.html", false);
     xmlhttp.send();
     oe.innerHTML = xmlhttp.responseText;
 }
@@ -13,7 +13,7 @@ function hamburgerMenu()
 {
     let xmlhttp = new XMLHttpRequest();
     let me = document.getElementById("ham-menu");
-    xmlhttp.open("GET", "shared-hamburger-nav.html", false);
+    xmlhttp.open("GET", "/HTML/SharedMenu/shared-hamburger-nav.html", false);
     xmlhttp.send();
     me.innerHTML = xmlhttp.responseText;
 }

@@ -28,9 +28,11 @@ body
 }
 .main-header h1, h2
 {
-    color: $primary-color;
-    font-weight: 500;
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
     padding: 20px 0;
+    text-align: justify;
 }
 .main-header img
 {
@@ -93,8 +95,25 @@ body
     color: $primary-color;
     font-weight: 400;
     padding: 20px 0;
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
+}
+.page-bottom-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "grid-part-1 grid-part-2";
+    column-gap: 20px;
+}
+.grid-part-1 h1
+{
+    text-align: justify;
+    color: $primary-color;
+    font-weight: 400;
+    padding: 20px 0;
+    font-size: 20px;
+
 }
 .why-ev 
 {
@@ -117,6 +136,7 @@ body
     .main-header h1
     {
         font-size: 20px;
+        text-align: justify;
     }
     .main-header img 
     {
@@ -149,6 +169,20 @@ body
         }
     }
     .why-ev h1 
+    {
+        font-size: 20px;
+    }
+    .page-bottom-grid
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+        h1
+        {
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+    .page-bottom h1
     {
         font-size: 20px;
     }
