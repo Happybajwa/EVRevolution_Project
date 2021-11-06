@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import "home";
+$primary-color:#3a7206;
+$btn-color:#72a741;
 *
 {
     box-sizing: border-box;
@@ -28,8 +29,8 @@ body
 }
 .main-header h1, h2
 {
-    color: black;
-    font-weight: 400;
+    color: $primary-color;
+    font-weight: 500;
     font-size: 20px;
     padding: 20px 0;
     text-align: justify;
@@ -43,10 +44,32 @@ body
 {
     cursor: pointer; 
 }
+.image-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "first-img-grid";
+    padding: 20px 0;
+    grid-auto-rows: 1fr ;
+    column-gap: 20px;
+}
 .grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6
 {
-    border: 2px solid $primary-color;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     padding: 8px 8px;
+    p 
+    {
+        color: $btn-color;
+        text-align: justify;
+    }
+    h2 
+    {
+        text-align: center;
+        color: $primary-color;
+        font-weight: 500;
+    }
 }
 .find-out
 {
@@ -75,6 +98,7 @@ body
 .graph img
 {
     width: 100%;
+
 }
 .title
 {
@@ -105,6 +129,13 @@ body
     grid-template-areas: 
     "grid-part-1 grid-part-2";
     column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px 0;
+}
+.grid-part-1, grid-part-2
+{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 20px 10px;
 }
 .grid-part-1 h1
 {
@@ -121,12 +152,17 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 20px;
+}
+.tesla-img
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 .why-ev h1 
 {
-    text-align: center;
+    text-align: justify;
     color: $primary-color;
     font-weight: 500;
 
@@ -138,6 +174,7 @@ body
         font-size: 20px;
         text-align: justify;
     }
+    
     .main-header img 
     {
         width: 100%;
@@ -171,6 +208,7 @@ body
     .why-ev h1 
     {
         font-size: 20px;
+        text-align: center;
     }
     .page-bottom-grid
     {
@@ -185,5 +223,9 @@ body
     .page-bottom h1
     {
         font-size: 20px;
+    }
+    .image-grid
+    {
+        grid-template-columns: 1fr;
     }
 }

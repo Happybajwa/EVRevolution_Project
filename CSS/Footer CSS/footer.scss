@@ -5,6 +5,20 @@
     font-size: 14px;
     padding: 60px 0 20px;
 }
+.container
+{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .footer p
 {
     color: #8a8a8a;
@@ -97,8 +111,6 @@ ul
        flex-basis: 100%;
        justify-content: center;
        text-align: center;
-     
-     
     }
     .footer-col-2 p
     {
