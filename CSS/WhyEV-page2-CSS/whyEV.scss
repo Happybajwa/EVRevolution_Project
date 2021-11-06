@@ -27,13 +27,21 @@ body
     justify-content: center;
     align-items: center;
 }
-.main-header h1, h2
+.main-header h1
 {
     color: $primary-color;
     font-weight: 500;
     font-size: 20px;
     padding: 20px 0;
     text-align: justify;
+}
+.main-header h2 
+{
+    font-size: 30px;
+    padding: 20px 0;
+    text-align: center;
+    color: $primary-color;
+    font-weight: 400;
 }
 .main-header img
 {
@@ -53,6 +61,12 @@ body
     padding: 20px 0;
     grid-auto-rows: 1fr ;
     column-gap: 20px;
+}
+.first-img-grid img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+    cursor: pointer;
 }
 .grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6
 {
@@ -132,7 +146,7 @@ body
     row-gap: 20px;
     padding: 20px 0;
 }
-.grid-part-1, grid-part-2
+.grid-part-1, .grid-part-2
 {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     padding: 20px 10px;
@@ -158,7 +172,13 @@ body
 {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
+}
+.tesla-img img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+    cursor: pointer;
 }
 .why-ev h1 
 {
@@ -167,17 +187,32 @@ body
     font-weight: 500;
 
 }
+.grid-1:hover,.grid-2:hover,.grid-3:hover
+{
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+.grid-4:hover,.grid-5:hover,.grid-6:hover
+{
+    transform: translateY(+20px);
+    cursor: pointer;
+}
 @media only screen and (max-width: 990px) 
 {
     .main-header h1
     {
         font-size: 20px;
         text-align: justify;
+        font-weight: 300;
     }
-    
     .main-header img 
     {
         width: 100%;
+    }
+    .main-header h2 
+    {
+        font-size: 25px;
+
     }
     .find-out
     {
@@ -227,5 +262,10 @@ body
     .image-grid
     {
         grid-template-columns: 1fr;
+    }
+    .grid-1:hover,.grid-2:hover,.grid-3:hover,
+    .grid-4:hover,.grid-5:hover,.grid-6:hover
+    {
+        transform: none;
     }
 }
