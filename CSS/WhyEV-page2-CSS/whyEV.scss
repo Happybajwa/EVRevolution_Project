@@ -75,8 +75,9 @@ body
     padding: 8px 8px;
     p 
     {
-        color: $btn-color;
+        color: #555;
         text-align: justify;
+        padding: 15px;
     }
     h2 
     {
@@ -132,7 +133,7 @@ body
 {
     color: $primary-color;
     font-weight: 400;
-    padding: 20px 0;
+    padding: 20px;
     text-align: justify;
     font-size: 20px;
 }
@@ -156,7 +157,7 @@ body
     text-align: justify;
     color: $primary-color;
     font-weight: 400;
-    padding: 20px 0;
+    padding: 20px;
     font-size: 20px;
 
 }
@@ -204,6 +205,7 @@ body
         font-size: 20px;
         text-align: justify;
         font-weight: 300;
+    
     }
     .main-header img 
     {

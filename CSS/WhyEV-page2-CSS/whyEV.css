@@ -87,8 +87,9 @@ body {
 }
 
 .grid-1 p, .grid-2 p, .grid-3 p, .grid-4 p, .grid-5 p, .grid-6 p {
-  color: #72a741;
+  color: #555;
   text-align: justify;
+  padding: 15px;
 }
 
 .grid-1 h2, .grid-2 h2, .grid-3 h2, .grid-4 h2, .grid-5 h2, .grid-6 h2 {
@@ -160,7 +161,7 @@ body {
 .page-bottom h1 {
   color: #3a7206;
   font-weight: 400;
-  padding: 20px 0;
+  padding: 20px;
   text-align: justify;
   font-size: 20px;
 }
@@ -187,7 +188,7 @@ body {
   text-align: justify;
   color: #3a7206;
   font-weight: 400;
-  padding: 20px 0;
+  padding: 20px;
   font-size: 20px;
 }
 

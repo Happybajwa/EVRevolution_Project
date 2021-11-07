@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$primary-color:#5ea31d;
+$btn-color:#72a741;
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(white, rgb(214, 214, 214));
+}
+.main-container
+{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    
+}
+.main-header
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 45px 0 40px;
+    
+    h1 
+    {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        color: $primary-color;
+        text-transform: uppercase;
+    }
+    h2 
+    {
+        font-size: 20px;
+        color: #555;
+        text-align: center;
+    }
+}
+.media
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+    h3 
+    {
+        padding: 0 20px;
+        border-left: 1px solid #555;
+    }
+    .fa-youtube
+    {
+        color: red;
+    }
+    .fa-twitter
+    {
+        color: #00ACEE;
+    }
+    .fa-instagram
+    {
+        background: radial-gradient(circle at 30% 107%, 
+        #fdf497 0%, #fdf497 5%, #fd5949 45%, 
+        #d6249f 60%, #285AEB 90%);
+        border-radius: 5px;
+    }
+    .fa-facebook-official
+    {
+        color: #3b5998;   
+    }
+    .fa-youtube:hover
+    {
+        color: gray;
+    }
+    .fa-twitter:hover
+    {
+        color: gray;
+    }
+    .fa-instagram:hover
+    {
+        color: gray;
+    }
+    .fa-facebook-official:hover
+    {
+        color: gray;   
+    }
+
+
+}
+.first-photo img
+{
+    width: 100%;
+    padding-top: 30px;
+}
+.first-photo h3 
+{
+    color: #555;
+    font-weight: 300;
+}
+.reasons
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 0;
+    h1 
+    {
+        text-align: left;
+        font-weight: 400;
+        padding: 20px 0;
+    }
+    p 
+    {
+        text-align: justify;
+        font-size: 18px;
+    }
+}
+.sec-photo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+    img 
+    {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 990px) 
+{
+    .main-header
+    {
+        h1 
+        {
+            font-size: 20px;
+        }
+        h2 
+        {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    .first-photo 
+    {
+        h3 
+        {
+            font-size: 15px;
+        }
+    }
+    .reasons 
+    {
+        h1 
+        {
+            font-size: 20px;
+        }
+        p 
+        {
+            font-size: 15px;
+        }
+    }
+}    
