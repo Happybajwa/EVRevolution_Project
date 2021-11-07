@@ -8,18 +8,18 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: radial-gradient(white, #d6d6d6);
+  background: radial-gradient(white, #87ceeb);
   scroll-behavior: smooth;
 }
 
-.main-container {
+.climate-container {
   max-width: 1300px;
   margin: auto;
   padding-left: 45px;
   padding-right: 45px;
 }
 
-.main-header {
+.page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,18 +37,11 @@ body {
   padding: 40px 45px 0 40px;
 }
 
-.main-header h1 {
+.page-header h1 {
   font-size: 30px;
   font-weight: 400;
   text-align: center;
-  color: #5ea31d;
   text-transform: uppercase;
-}
-
-.main-header h2 {
-  font-size: 20px;
-  color: #555;
-  text-align: center;
 }
 
 .media {
@@ -66,7 +59,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .media h3 {
@@ -107,17 +100,39 @@ body {
   color: gray;
 }
 
-.first-photo img {
-  width: 100%;
-  padding-top: 30px;
+.earth {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-image: url(https://storage.googleapis.com/gweb-uniblog-publish-prod/images/New-global-view.max-1000x1000.jpeg);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-size: cover;
+  -webkit-box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+          box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+  -webkit-animation: spin 30s linear alternate infinite;
+          animation: spin 30s linear alternate infinite;
+  z-index: -1;
 }
 
-.first-photo h3 {
-  color: #555;
-  font-weight: 300;
+@-webkit-keyframes spin {
+  100% {
+    background-position: 100%;
+  }
 }
 
-.reasons {
+@keyframes spin {
+  100% {
+    background-position: 100%;
+  }
+}
+
+.para-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,65 +140,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 10px 0;
-}
-
-.reasons h1 {
-  text-align: left;
-  font-weight: 400;
-  padding: 20px 0;
-}
-
-.reasons p {
-  text-align: justify;
-  font-size: 18px;
-}
-
-.sec-photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding-top: 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  padding: 30px 0;
+  text-align: justify;
 }
 
-.sec-photo img {
-  width: 100%;
+.para-one h2 {
+  font-size: 20px;
+  font-weight: 300;
 }
-
-@media only screen and (max-width: 990px) {
-  .main-header h1 {
-    font-size: 20px;
-  }
-  .main-header h2 {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  .first-photo h3 {
-    font-size: 15px;
-  }
-  .reasons h1 {
-    font-size: 20px;
-  }
-  .reasons p {
-    font-size: 15px;
-  }
-}
-/*# sourceMappingURL=petrol.css.map */
+/*# sourceMappingURL=climate.css.map */
