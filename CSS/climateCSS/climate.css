@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: radial-gradient(white, #87ceeb);
+  background: radial-gradient(white, #d1f7ae);
   scroll-behavior: smooth;
 }
 
@@ -17,6 +17,7 @@ body {
   margin: auto;
   padding-left: 45px;
   padding-right: 45px;
+  width: 100%;
 }
 
 .page-header {
@@ -42,6 +43,7 @@ body {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  color: #5ea31d;
 }
 
 .media {
@@ -103,7 +105,7 @@ body {
 .earth {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 450px;
   right: 0;
   left: 0;
   margin: auto;
@@ -140,7 +142,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 300px;
+  padding-top: 350px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -153,5 +155,144 @@ body {
 .para-one h2 {
   font-size: 20px;
   font-weight: 300;
+}
+
+.benifits-para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: justify;
+}
+
+.benifits-para h1 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5ea31d;
+}
+
+.benifits-para p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.benifits-para img {
+  width: 100%;
+  padding: 30px 0;
+}
+
+hr {
+  width: 90%;
+  margin: 20px 0;
+}
+
+.points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+}
+
+.points h1 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.points li {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 15px 0;
+}
+
+.points ul {
+  list-style: disc;
+  text-align: justify;
+  padding: 20px 0;
+}
+
+.green-car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.green-car img {
+  width: 80%;
+  padding-bottom: 20px;
+  margin-top: -80px;
+}
+
+.page-bottom-photos {
+  display: -ms-grid;
+  display: grid;
+  padding: 20px 20px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+      grid-template-areas: "grid-photo1 grid-photo2";
+}
+
+.page-bottom-photos img {
+  width: 100%;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+@media only screen and (max-width: 990px) {
+  .page-header h1 {
+    font-size: 20px;
+  }
+  .para-one {
+    padding-top: 320px;
+  }
+  .para-one h2 {
+    font-size: 16px;
+  }
+  .benifits-para
+h1 {
+    font-size: 20px;
+  }
+  .benifits-para p {
+    font-size: 16px;
+  }
+  .points li {
+    font-size: 16px;
+  }
+  .page-bottom-photos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
 }
 /*# sourceMappingURL=climate.css.map */
