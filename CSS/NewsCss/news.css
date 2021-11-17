@@ -154,4 +154,28 @@ canvas {
 .ref {
   color: black;
 }
+
+@media only screen and (max-width: 990px) {
+  canvas {
+    width: 400px;
+  }
+  .Photos img {
+    width: 90%;
+  }
+  .grid-news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .heading h1 {
+    font-size: 16px;
+  }
+  .heading p {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=news.css.map */

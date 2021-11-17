@@ -9,11 +9,92 @@
     <link rel="stylesheet" href="/CSS/Logo CSS/logo.css">
     <link rel="stylesheet" href="/CSS/Video Css/video.css">
     <link rel="stylesheet" href="/CSS/Footer CSS/footer.css">
-    <link rel="stylesheet" href="/CSS/NewsCss/news.css">
+    <link rel="stylesheet" href="/CSS/aboutusCSS/aboutus.css">
     <script src="/JavaScript/nav.js"></script>
     <title>EV Revolution|About Us</title>
 </head>
 <body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="/HTML/home.html"><img src="/All-images//HomePage-Images/EV Revolution.svg" alt="logo"></a>
+            </div> <nav id="menu"></nav></div>
+        <div class="dropdown">
+            <button class="dropbtn"><i style="color: #2a4e07;" class="fa fa-bars"></i></button>
+            <div class="dropdown-content" id="ham-menu"></div>
+          </div>  
+          <div class="heading">
+            <div class="aboutus">
+                <h1>About us</h1>
+                <p>This is a Student Project for Front End Web Development Course by Harpreet Singh. I'm studying at manukau Institue of Technoogy. which is based in Auckland
+                    In this project I'm focusing more on electric vehicles and there impact on enviroment and How Electric vehicles are the future. Thanks for Visiting us today.
+                </p>
+                <img src="/All-Images/aboutus-images/evgraphic_petovarga_sstock-removebg-preview.png" alt=""> 
+            </div>
+          </div>
+          <div class="contact-container">
+            <h1>Get in touch</h1>
+            <p>We would love to respond to your quries and help you sucseed.<br>Feel free to get in touch with us.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your request</h3>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                              <label>First Name</label>
+                            <input  type="text" id="firstName" placeholder="john" required onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'>
+                          </div>
+                          <div class="input-group">
+                              <label>Last Name</label>
+                            <input type="text" id="lastName"  placeholder="Debra" required onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'>
+                          </div>
+                        </div>
+                        <div class="input-row">
+                          <div class="input-group">
+                              <label>Email</label>
+                            <input type="email" id="email" placeholder="abc@anymail.com" required size="30">
+                          </div>
+                          <div class="input-group">
+                            <label>Subject</label>
+                          <input type="text" id="subject"  placeholder="Electric Car" required>
+                        </div>
+                      </div>
+                      <div class="input-row">
+                        <div class="input-group">
+                            <label>Phone</label>
+                          <input type="number" pattern="[0-9]" placeholder="+64-123456-789" required>
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea id="message" placeholder="Write your message max 500 words"  rows="5" maxlength="500" required></textarea>
     
+                    <a href="#" class="button">SEND</a>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach US</h3>
+                    
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>contactus@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+64 32459-878</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>2021 Nomain Street <br>Manukau, Auckland, 20291</td>
+                        </tr>
+                    </table>
+    
+    
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <main-footer></main-footer>
 </body>
 </html>
