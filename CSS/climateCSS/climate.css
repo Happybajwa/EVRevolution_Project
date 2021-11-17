@@ -103,11 +103,6 @@ body {
 }
 
 .earth {
-  position: absolute;
-  top: 0;
-  bottom: 450px;
-  right: 0;
-  left: 0;
   margin: auto;
   width: 300px;
   height: 300px;
@@ -142,7 +137,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 350px;
+  padding-top: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -272,9 +267,6 @@ hr {
 @media only screen and (max-width: 990px) {
   .page-header h1 {
     font-size: 20px;
-  }
-  .para-one {
-    padding-top: 320px;
   }
   .para-one h2 {
     font-size: 16px;

@@ -90,11 +90,7 @@ body
 
 .earth
 {
-    position: absolute;
-    top: 0;
-    bottom: 450px;
-    right: 0;
-    left: 0;
+
     margin: auto;
     width: 300px;
     height: 300px;
@@ -114,7 +110,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    padding-top: 350px;
+    padding-top: 20px;
     justify-content: center;
     align-items: center;
     text-align: justify;
@@ -216,10 +212,6 @@ hr
     .page-header h1 
     {
         font-size: 20px;
-    }
-    .para-one
-    {
-        padding-top: 320px;
     }
     .para-one h2
     {
