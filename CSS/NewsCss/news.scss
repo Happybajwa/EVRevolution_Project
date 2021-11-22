@@ -36,7 +36,7 @@ canvas
     justify-content: center;
     align-items: center;
 }
-.Photos
+.videoFile
 {
     display: flex;
     flex-direction: column;
@@ -44,12 +44,9 @@ canvas
     align-items: center;
     width: 100%;
     margin-bottom: 40px;
-    img:hover
+    video 
     {
-        transform: scale(1.2);
-        transition: .3s ease-in-out;
-        cursor: pointer; 
-
+        border-radius: 10px;
     }
 }
 
@@ -118,17 +115,18 @@ canvas
        width: 400px;
 
    }
-    .Photos img 
-    {
-        width: 90%;
-    }
     .grid-news
     {
         display: flex;
         flex-direction: column;
     }
+    .videoFile
+    {
+        width: 100%;
+    }
 
-    .heading {
+    .heading 
+    {
         h1 
         {
             font-size: 16px;

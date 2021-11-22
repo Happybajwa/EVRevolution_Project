@@ -58,7 +58,7 @@ canvas {
           align-items: center;
 }
 
-.Photos {
+.videoFile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,12 +76,8 @@ canvas {
   margin-bottom: 40px;
 }
 
-.Photos img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  cursor: pointer;
+.videoFile video {
+  border-radius: 10px;
 }
 
 .grid-news {
@@ -159,9 +155,6 @@ canvas {
   canvas {
     width: 400px;
   }
-  .Photos img {
-    width: 90%;
-  }
   .grid-news {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -170,6 +163,9 @@ canvas {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .videoFile {
+    width: 100%;
   }
   .heading h1 {
     font-size: 16px;

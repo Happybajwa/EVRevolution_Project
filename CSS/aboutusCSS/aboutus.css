@@ -10,6 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: radial-gradient(white, #d1f7ae);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .heading {
@@ -42,6 +43,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   padding: 10px;
 }
 
@@ -100,7 +102,7 @@ body {
 .contact-left {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
-  padding: 40px 60px;
+  padding: 20px 60px;
   background-color: white;
 }
 
@@ -153,6 +155,7 @@ input {
 .input-row, .input-group {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
+  position: relative;
 }
 
 label {
@@ -168,6 +171,11 @@ textarea {
           box-sizing: border-box;
 }
 
+.input-group2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 .button {
   display: inline-block;
   padding: .75rem 1.25rem;
@@ -175,6 +183,7 @@ textarea {
   margin-top: 20px;
   width: 150px;
   border-radius: 10rem;
+  border: 0px;
   color: #fff;
   text-transform: uppercase;
   font-size: 1rem;
@@ -220,13 +229,275 @@ textarea {
   width: 100%;
 }
 
+table {
+  padding-top: 20px;
+}
+
 tr, td:first-child {
   padding-right: 20px;
 }
 
 tr, td {
-  padding-top: 20px;
+  padding-top: 30px;
   font-size: 18px;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 80px 0 50px 0;
+  width: 100%;
+}
+
+.subscribe p {
+  text-align: center;
+  color: #5ea31d;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+.wrapper {
+  height: 40px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.wrapper .btn-1 {
+  height: 100%;
+  width: 50%;
+  color: #5ea31d;
+  background: #fff;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: 400;
+  border-radius: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .btn-1:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#click:checked ~ .btn-1 {
+  height: 40px;
+  width: 100px;
+  opacity: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.wrapper .field {
+  height: 100%;
+  width: 0%;
+  opacity: 0;
+  pointer-events: none;
+  position: relative;
+  -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#click:checked ~ .field {
+  width: 100%;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wrapper .field input {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 0 110px 0 15px;
+  font-size: 14px;
+  outline: none;
+  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .field input::-webkit-input-placeholder {
+  color: #999;
+  font-size: 16px;
+}
+
+.wrapper .field input:-ms-input-placeholder {
+  color: #999;
+  font-size: 16px;
+}
+
+.wrapper .field input::-ms-input-placeholder {
+  color: #999;
+  font-size: 16px;
+}
+
+.wrapper .field input::placeholder {
+  color: #999;
+  font-size: 16px;
+}
+
+.wrapper .field .btn-2 {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+  line-height: 30px;
+  background: #5ea31d;
+  height: 30px;
+  width: 100px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.wrapper .field .btn-2:active {
+  -webkit-transform: translateY(-50%) scale(0.9);
+          transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper #click {
+  display: none;
+}
+
+.pop-up {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100vh;
+  pointer-events: none;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: fixed;
+}
+
+.pop-up h1 {
+  color: #5ea31d;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.pop-up h3 {
+  color: #5ea31d;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.pop-up.show {
+  pointer-events: auto;
+  opacity: 1;
+  z-index: 10;
+}
+
+.pop-up-message {
+  max-width: 100%;
+  width: 600px;
+  padding: 30px 50px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.input-group i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.input-group small {
+  visibility: hidden;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.input-group.success input {
+  border-color: #5ea31d;
+}
+
+.input-group.error input {
+  border-color: red;
+}
+
+.input-group.success i.fa-check-circle {
+  visibility: visible;
+  color: #5ea31d;
+}
+
+.input-group.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+
+.input-group.error small {
+  color: red;
+  visibility: visible;
+}
+
+.senderror {
+  visibility: hidden;
+}
+
+.senderror.show {
+  visibility: visible;
+  color: red;
+}
+
+.subscribe-message {
+  visibility: hidden;
+}
+
+.subscribe-message.show {
+  visibility: visible;
+  color: red;
+  margin-top: -15px;
 }
 
 @media only screen and (max-width: 990px) {

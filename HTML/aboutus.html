@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="/CSS/Footer CSS/footer.css">
     <link rel="stylesheet" href="/CSS/aboutusCSS/aboutus.css">
     <script src="/JavaScript/nav.js"></script>
+    <script src="https://cdn.tiny.cloud/1/y34kgnu11spmsg0tw5qk49mq9xb3g6vwk6awrye8jm4ehslo/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+      tinymce.init({
+        selector: '#message',
+        plugins: 'code',
+      });
+    </script>
     <title>EV Revolution|About Us</title>
 </head>
 <body>
@@ -29,9 +36,10 @@
                 <p>This is a Student Project for Front End Web Development Course by Harpreet Singh. I'm studying at manukau Institue of Technoogy. which is based in Auckland
                     In this project I'm focusing more on electric vehicles and there impact on enviroment and How Electric vehicles are the future. Thanks for Visiting us today.
                 </p>
-                <img src="/All-Images/aboutus-images/evgraphic_petovarga_sstock-removebg-preview.png" alt=""> 
-            </div>
+                <img src="/All-Images/aboutus-images/evgraphic_petovarga_sstock-removebg-preview.png" alt="">
+            </div> 
           </div>
+          <form action="/" method="get" class="form" id="form">
           <div class="contact-container">
             <h1>Get in touch</h1>
             <p>We would love to respond to your quries and help you sucseed.<br>Feel free to get in touch with us.</p>
@@ -42,33 +50,43 @@
                         <div class="input-row">
                             <div class="input-group">
                               <label>First Name</label>
-                            <input  type="text" id="firstName" placeholder="john" required onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'>
+                            <input type="text" id="firstName" placeholder="john" onkeyup="validate(this,`First Name cannnot be blank`)">
+                            <i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i> <small>Error Message</small> 
                           </div>
                           <div class="input-group">
                               <label>Last Name</label>
-                            <input type="text" id="lastName"  placeholder="Debra" required onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'>
+                            <input type="text" id="lastName"  placeholder="Debra" onkeyup="validate(this,`Last Name cannnot be blank`)">
+                            <i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i> <small>Error Message</small> 
                           </div>
                         </div>
                         <div class="input-row">
                           <div class="input-group">
                               <label>Email</label>
-                            <input type="email" id="email" placeholder="abc@anymail.com" required size="30">
+                            <input type="email" id="email" placeholder="abc@anymail.com" size="30" onkeyup="validate(this,`Email cannnot be blank`)">
+                            <i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i> <small>Error Message</small> 
                           </div>
                           <div class="input-group">
                             <label>Subject</label>
-                          <input type="text" id="subject"  placeholder="Electric Car" required>
+                          <input type="text" id="subject"  placeholder="Electric Car" onkeyup="validate(this,`Subject cannnot be blank`)">
+                          <i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i> <small>Error Message</small> 
                         </div>
                       </div>
                       <div class="input-row">
                         <div class="input-group">
                             <label>Phone</label>
-                          <input type="number" pattern="[0-9]" placeholder="+64-123456-789" required>
+                          <input type="number" id="phone" placeholder="+64-123456-789" onkeyup="validate(this,`Phone cannnot be blank`)">
+                          <i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i><small>Error Message</small> 
                         </div>
                     </div>
-                    <label>Message</label>
-                    <textarea id="message" placeholder="Write your message max 500 words"  rows="5" maxlength="500" required></textarea>
-    
-                    <a href="#" class="button">SEND</a>
+                    <div class="input-row">
+                      <div class="input-group">
+                        <label>Message</label>
+                        <textarea id="message" placeholder="Write your message max 500 words" rows="8" maxlength="500" onkeyup="validate(this,`Message cannnot be blank`)"></textarea>
+                        <i class="fa fa-check-circle"></i><i class="fa fa-exclamation-circle"></i><small>Error Message</small> 
+                      </div>
+                  </div>
+                    <button type="submit" id="send-request" class="button">Send</button>
+                    <p class="senderror" id="btnmsg">Error Message</p> 
                     </form>
                 </div>
                 <div class="contact-right">
@@ -87,14 +105,46 @@
                             <td>Address</td>
                             <td>2021 Nomain Street <br>Manukau, Auckland, 20291</td>
                         </tr>
+                        <tr>
+                          <td>Operations</td>
+                          <td>Mon-Fri <br>9am - 4pm</td>
+                      </tr>
                     </table>
-    
-    
-    
                 </div>
             </div>
         </div>
+      </form>         
+        <div class="subscribe">
+          <p>Subscribe us here</p>
+          <div class="wrapper">
+            <input type="checkbox" id="click">
+            <label class="btn-1" for="click">Subscribe</label>
+            <div class="field">
+               <input type="email" id="emailsubscribe" placeholder="abc@anymail.com" required size="30">
+               <label id="popbtn" class="btn-2">Subscribe</label>
+               <p id="subscribe-message" class="subscribe-message"></p>
+            </div>
+         </div>
+        </div> 
+        <div class="pop-up" id="modal">
+          <div class="pop-up-message">
+            <h1>Thank you <br> for subscribing for updates</h1>
+            <img src="/All-Images/aboutus-images/bell-icon.svg" alt="photo">
+            <h3>You are all set.</h3>
+            <button class="button" id="close">Done</button>
+          </div>
+        </div>
+        <div class="pop-up" id="modal-request">
+          <div class="pop-up-message">
+            <h1>Your Request has been submitted successfully. We will contact you within 48 working hours.</h1>
+            <img src="/All-Images/aboutus-images/done.png" alt="photo">
+            <h3>Thanks</h3>
+            <button class="button" id="close-request">Close</button>
+          </div>
+        </div>
     </div>
+    <script src="/JavaScript/popup.js"></script>
+    <script src="/JavaScript/validation.js"></script>
     <main-footer></main-footer>
 </body>
 </html>

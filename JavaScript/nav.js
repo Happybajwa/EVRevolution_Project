@@ -37,8 +37,8 @@ function checkScreenSize2()
         {
             loadMenu();
         }
-
 }
+
 //Canvas animation code
 var can, ctx, step = 10, steps = 50;
 delay = 20;
@@ -124,5 +124,8 @@ class Footer extends HTMLElement {
         </footer>     
       `;
     }
-  }
+}
+
   customElements.define('main-footer', Footer);
+  
+
