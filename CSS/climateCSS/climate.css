@@ -1,3 +1,6 @@
+/*Harpreet Singh - 23/11/2021
+google fonts link
+*/
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -11,7 +14,9 @@ body {
   background: radial-gradient(white, #d1f7ae);
   scroll-behavior: smooth;
 }
-
+/*Harpreet Singh - 23/11/2021
+main-container code
+*/
 .climate-container {
   max-width: 1300px;
   margin: auto;
@@ -19,7 +24,9 @@ body {
   padding-right: 45px;
   width: 100%;
 }
-
+/*Harpreet Singh - 23/11/2021
+page main header
+*/
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,7 +52,9 @@ body {
   text-transform: uppercase;
   color: #5ea31d;
 }
-
+/*Harpreet Singh - 23/11/2021
+social media logos
+*/
 .media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,7 +72,9 @@ body {
   width: 100%;
   padding: 20px 0;
 }
-
+/*Harpreet Singh - 23/11/2021
+social media logos and their hover effects
+*/
 .media h3 {
   padding: 0 20px;
   border-left: 1px solid #555;
@@ -101,7 +112,9 @@ body {
 .media .fa-facebook-official:hover {
   color: gray;
 }
-
+/*Harpreet Singh - 23/11/2021
+rotating earth css code
+*/
 .earth {
   margin: auto;
   width: 300px;
@@ -116,7 +129,9 @@ body {
           animation: spin 30s linear alternate infinite;
   z-index: -1;
 }
-
+/*Harpreet Singh - 23/11/2021
+keyframe to make this animation sequence
+*/
 @-webkit-keyframes spin {
   100% {
     background-position: 100%;
@@ -185,7 +200,9 @@ hr {
   width: 90%;
   margin: 20px 0;
 }
-
+/*Harpreet Singh - 23/11/2021
+unorder list css
+*/
 .points {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,13 +274,17 @@ hr {
           column-gap: 20px;
       grid-template-areas: "grid-photo1 grid-photo2";
 }
-
+/*Harpreet Singh - 23/11/2021
+last 4 photos on the page and shadow effect on the photo
+*/
 .page-bottom-photos img {
   width: 100%;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-
+/*Harpreet Singh - 23/11/2021
+media query to make page reposnsive
+*/
 @media only screen and (max-width: 990px) {
   .page-header h1 {
     font-size: 20px;

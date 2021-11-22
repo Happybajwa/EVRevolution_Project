@@ -6,33 +6,30 @@
   margin: 0;
   padding: 0;
 }
-
+/*body css*/
 body {
   font-family: 'Poppins', sans-serif;
   background: radial-gradient(#fff, #d1f7ae);
 }
-
+/*main container fonts*/
 .container > h1 {
   color: #3a7206;
   padding-bottom: 30px;
   text-align: center;
+  font-weight: 400;
 }
-
+/*header row class margin*/
 .header .row {
   margin-top: 70px;
 }
-
+/*main container css*/
 .container {
   max-width: 1300px;
   margin: auto;
   padding-left: 45px;
   padding-right: 45px;
 }
-
-.container h1 {
-  font-weight: 400;
-}
-
+/*page para tag css*/
 p {
   color: #555;
   text-align: justify;
@@ -41,6 +38,9 @@ p {
   font-size: 20px;
 }
 
+/*Harpreet Singh - 23/11/2021
+this class containes two more divs in it
+*/
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,19 +53,27 @@ p {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
+/*Harpreet Singh - 23/11/2021
+this class has text in it on left side of the page along with a 
+photo on write
+*/
 .col-2 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   min-width: 300px;
 }
-
+/*Harpreet Singh - 23/11/2021
+photo code
+*/
 .col-2 img {
   max-width: 100%;
   padding: 50px 0;
   cursor: pointer;
 }
-
+/*Harpreet Singh - 23/11/2021
+photo hoover css which will be effcetive on hover on the photo
+photo will pop-out slowly on hover
+*/
 .col-2 img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -96,7 +104,10 @@ p {
   -webkit-transition: background 0.8s;
   transition: background 0.8s;
 }
-
+/*Harpreet Singh - 23/11/2021
+this class contains a l=link to second page(why-ev)
+and j=has hover effect as below
+*/
 .btn:hover {
   background: #3a7206;
   -webkit-transform: scale(1.2);
@@ -104,7 +115,10 @@ p {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
+/*Harpreet Singh - 23/11/2021
+this div contains around 3 divs with photos in it
 
+*/
 .small-container {
   max-width: 1080px;
   margin: auto;
@@ -123,7 +137,9 @@ p {
   width: 100%;
   cursor: pointer;
 }
-
+/*Harpreet Singh - 23/11/2021
+hover effect on img
+*/
 .col-3 img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -143,7 +159,10 @@ p {
   width: 100%;
   cursor: pointer;
 }
-
+/*Harpreet Singh - 23/11/2021
+this class contains the quote from some 
+great prople around the world about electric vehicles
+*/
 .testimonial {
   padding-top: 100px;
 }
@@ -159,17 +178,19 @@ p {
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
-
+/*Harpreet Singh - 23/11/2021
+hover effects on the photos
+*/
 .testimonial .col-4:hover {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
 .testimonial img {
-  width: 40%;
+  width: 50%;
   margin-top: 20px;
   border-radius: 50%;
-  height: 10vh;
+  height: 13vh;
 }
 
 .quote {
@@ -212,7 +233,9 @@ p {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
-
+/*Harpreet Singh - 23/11/2021
+media query for making poge responsive
+*/
 @media only screen and (max-width: 990px) {
   .container h1 {
     font-weight: 300;

@@ -92,7 +92,7 @@ class Footer extends HTMLElement {
                  <ul>
                      <li><a href="/HTML/home.html">Home</a></li>
                      <li><a href="/HTML/whyev.html">Why EV</a></li>
-                     <li><a href="/HTML/petrol&Diesel.html">Petrol & Diesle</a></li>
+                     <li><a href="/HTML/fossilfuel.html">Fossil Fuel</a></li>
                      <li><a href="/HTML/climate-impact.html">Climate Impact</a></li>
                      <li><a href="/HTML/News.html">News</a></li>
                      <li><a href="/HTML/aboutus.html">About us</a></li>

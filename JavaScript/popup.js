@@ -1,4 +1,4 @@
-
+//getting document from page
 const open = document.getElementById("popbtn");
 const close = document.getElementById("close");
 const popup = document.getElementById("modal");
@@ -6,7 +6,7 @@ const subscribe_email = document.getElementById("emailsubscribe");
 
 
 open.addEventListener('click', checksubscribe)
-
+//functoion to check user email is given or not
 function checksubscribe()
 {
     if(subscribe_email.value === "")
@@ -28,7 +28,7 @@ function checksubscribe()
     }
 }
 
-
+//cheking inputs so that if they are empty pop-up wont open and an error message will be thrown
 const btn = document.getElementById("send-request");
 btn.addEventListener('click', checkInputs2) 
 
