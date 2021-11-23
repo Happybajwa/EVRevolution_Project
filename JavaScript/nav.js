@@ -90,7 +90,7 @@ class Footer extends HTMLElement {
                 <div class="footer-col-2">
                  <img src="/All-images/HomePage-Images/footerLOGO.png" alt="">
                  <ul>
-                     <li><a href="/HTML/home.html">Home</a></li>
+                     <li><a href="/home.html">Home</a></li>
                      <li><a href="/HTML/whyev.html">Why EV</a></li>
                      <li><a href="/HTML/fossilfuel.html">Fossil Fuel</a></li>
                      <li><a href="/HTML/climate-impact.html">Climate Impact</a></li>
