@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/CSS/NewsCss/news.css">
     <script src="/JavaScript/nav.js"></script>
     <title>EV Revolution|News</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <!------------Main Header and navigation ------------>
@@ -35,7 +36,7 @@
           <div class="newHeader">
                 <!------------Page video------------>
               <div class="videoFile">
-                <video width="100%" src="/All-Images/news-images/The Future Of Cars _ Electric Car Animation Video _2D Animation _ Electric Car _ The Creative Mind.mp4" controls autoplay></video>
+                <video width="100%" src="/All-Images/news-images/The Future Of Cars _ Electric Car Animation Video _2D Animation _ Electric Car _ The Creative Mind.mp4" controls></video>
               </div>
           </div>
           <div class="grid-news">
@@ -107,11 +108,24 @@
                         <p> November 5, 2021</p></a>
                     </div>
                 </div>
-                <div class="last"></div>
-    </div>
+                <div class="last"><p  id="thankyou"></p></div>
+                <div class="feedback">
+                    <form class="form">
+                      <h2>How did you like the content</h2>
+                      <div id="hide" class="inputGroup">
+                        <input id="radio1" name="radio" type="radio"/>
+                        <label class="open" for="radio1">Great</label>
+                      </div>
+                      <div id="hidefine" class="inputGroup">
+                        <input id="radio2" name="radio" type="radio"/>
+                        <label id="hide" class="open" for="radio2">Just Fine</label>
+                      </div>
+                    </form>
+                  </div>
+            </div>
   <!------------footer ------------>
     <main-footer></main-footer>
 </body>
-
+<script src="/JavaScript/newspagepopup.js"></script>
 </html>
 

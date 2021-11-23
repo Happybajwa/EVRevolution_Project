@@ -46,7 +46,7 @@ function checkInputs2()
    const emailvalue = email.value.trim();
    const subjectvalue = subject.value.trim();
    const phonevalue = phone.value.trim();
-   const messagevalue = message.value.trim();
+   const messagevalue = message.value;
 
 
    if(firstnamevalue === '' || lastnamevalue === '' || emailvalue === ''|| phonevalue === ''|| subjectvalue === '' || messagevalue === '')
