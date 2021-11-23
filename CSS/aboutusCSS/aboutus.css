@@ -115,7 +115,7 @@ body {
 .contact-right {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  padding: 40px;
+  padding: 30px;
   background-color: #80be46;
 }
 
@@ -130,7 +130,7 @@ h1 {
 }
 
 .contact-container p {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 input {
@@ -395,7 +395,7 @@ tr, td {
   opacity: 0;
   width: 100%;
   pointer-events: none;
-  height: 50%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,6 +423,10 @@ tr, td {
   color: #5ea31d;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+.pop-up img {
+  width: 50%;
 }
 
 .pop-up.show {
@@ -488,12 +492,26 @@ tr, td {
 
 .subscribe-message {
   visibility: hidden;
+  font-size: 14px;
+  padding: 15px;
 }
 
 .subscribe-message.show {
   visibility: visible;
   color: red;
   margin-top: -22px;
+}
+
+.tableimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (max-width: 990px) {
@@ -521,7 +539,7 @@ tr, td {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  label {
+  .labeltag {
     padding: 20px 0;
   }
   .aboutus h1 {

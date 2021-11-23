@@ -74,7 +74,6 @@ body
 .contact-box
 {
     display: flex;
-
 }
 .contact-left
 {
@@ -91,7 +90,7 @@ body
 .contact-right
 {
     flex-basis: 40%;
-    padding: 40px;
+    padding: 30px;
     background-color: #80be46;
     h3 
     {
@@ -106,7 +105,7 @@ h1
 }
 .contact-container p 
 {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 input 
 {
@@ -309,7 +308,7 @@ tr, td
       opacity: 0;
       width: 100%;
       pointer-events: none;
-      height: 50%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -327,6 +326,10 @@ tr, td
           color: $primary-color;
           text-transform: uppercase;
           font-weight: 300;
+      }
+      img 
+      {
+          width: 50%;
       }
   }
   .pop-up.show
@@ -395,6 +398,8 @@ tr, td
   .subscribe-message
   {
       visibility: hidden;
+      font-size: 14px;
+      padding: 15px;
   }
   .subscribe-message.show 
   {
@@ -402,8 +407,12 @@ tr, td
       color: red;
       margin-top: -22px;
   }
-
-
+.tableimg 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media only screen and (max-width: 990px) 
 {
     .input-row
@@ -428,8 +437,7 @@ tr, td
     {
         flex-direction: column;
     }
-
-    label
+    .labeltag
     {
         padding: 20px 0;
     }

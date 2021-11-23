@@ -6,24 +6,27 @@ const subscribe_email = document.getElementById("emailsubscribe");
 
 
 open.addEventListener('click', checksubscribe)
+var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 //functoion to check user email is given or not
 function checksubscribe()
 {
-    if(subscribe_email.value === "")
+  
+    if(subscribe_email.value === "" || !subscribe_email.value.match(validRegex))
     {
         let message = document.getElementById("subscribe-message")
-        message.innerHTML = "Please Enter your email"
+        message.innerHTML = "Please Enter your email correctly"
         message.className = "subscribe-message show"
+        subscribe_email.value = "";
 
     }else
     {
+            let message = document.getElementById("subscribe-message")
+            message.innerHTML = "";
             popup.classList.add("show")
             close.addEventListener("click", () => {
             popup.classList.remove("show")
-            let message = document.getElementById("subscribe-message")
-            message.innerHTML = ""
             message.className = "subscribe-message"
-            subscribe_email.value = "";
+            subscribe_email.value = "";     
  });
     }
 }
