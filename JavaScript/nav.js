@@ -84,11 +84,11 @@ class Footer extends HTMLElement {
                     <p>Download App for Android and ios mobile phone.</p>
                     <div class="app-logo">
                         <a href="https://play.google.com/store" target="blank"><img src="/All-images/HomePage-Images/androidlogo.png"></a>
-                         <a href="https://www.apple.com/nz/app-store/" target="blank"><img src="/All-images/HomePage-Images/IOS-APP.svg"></a>
+                         <a href="https://www.apple.com/nz/app-store/" target="blank"><img src="/All-images/HomePage-Images/ioslogo.svg"></a>
                  </div>
                 </div>
                 <div class="footer-col-2">
-                 <img src="/All-images/HomePage-Images/footerLOGO.png" alt="">
+                 <img src="/All-images/HomePage-Images/footerlogo.png" alt="photo">
                  <ul>
                      <li><a href="/home.html">Home</a></li>
                      <li><a href="/HTML/whyev.html">Why EV</a></li>
