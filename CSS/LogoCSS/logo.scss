@@ -1,0 +1,19 @@
+.logo img
+{
+    width:155px;
+    padding-top: 15px;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 990px)
+{
+    .navbar
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
