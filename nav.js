@@ -83,19 +83,19 @@ class Footer extends HTMLElement {
                     <h3>Download our App</h3>
                     <p>Download App for Android and ios mobile phone.</p>
                     <div class="app-logo">
-                        <a href="https://play.google.com/store" target="blank"><img src="/All-images/HomePageImages/androidlogo.png"></a>
-                         <a href="https://www.apple.com/nz/app-store/" target="blank"><img src="/All-images/HomePageImages/ioslogo.svg"></a>
+                        <a href="https://play.google.com/store" target="blank"><img src="/home/androidlogo.png"></a>
+                         <a href="https://www.apple.com/nz/app-store/" target="blank"><img src="/home/ioslogo.svg"></a>
                  </div>
                 </div>
                 <div class="footer-col-2">
-                 <img src="/All-images/HomePageImages/footerlogo.png" alt="photo">
+                 <img src="/home/footerlogo.png" alt="photo">
                  <ul>
                      <li><a href="/home.html">Home</a></li>
-                     <li><a href="/HTML/whyev.html">Why EV</a></li>
-                     <li><a href="/HTML/fossilfuel.html">Fossil Fuel</a></li>
-                     <li><a href="/HTML/climate-impact.html">Climate Impact</a></li>
-                     <li><a href="/HTML/News.html">News</a></li>
-                     <li><a href="/HTML/aboutus.html">About us</a></li>
+                     <li><a href="/whyev/whyev.html">Why EV</a></li>
+                     <li><a href="/fossilfuel/fossilfuel.html">Fossil Fuel</a></li>
+                     <li><a href="/climateImapct/climate-impact.html">Climate Impact</a></li>
+                     <li><a href="/news/News.html">News</a></li>
+                     <li><a href="/about/aboutus.html">About us</a></li>
                  </ul>
              </div>
              <div class="footer-col-3">
